@@ -13,6 +13,11 @@ export const InfoBarContainer = styled.div`
 
 export const CardHeader = styled.div`
   .infoHeader {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99999;
     display: flex;
     flex-direction: column;
     justify-content: center;
