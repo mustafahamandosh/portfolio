@@ -8,7 +8,6 @@ export const ContentContainer = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
-  z-index: 9999;
 `;
 
 export const ContentChildren = styled.div`
@@ -23,5 +22,6 @@ export const ContentChildren = styled.div`
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;
+    margin: 30px 0 10px 0;
   }
 `;

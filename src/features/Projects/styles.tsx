@@ -5,7 +5,6 @@ export const ProjectsCard = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
 
   .card {
     position: relative;

@@ -9,7 +9,7 @@ import {
   TechnicalSkills,
 } from './styles';
 import Card from '../../components/Card';
-import ProfileImage from 'assets/images/profile-image.jpg';
+import ProfileImage from 'assets/images/profile-image.png';
 import CircleProgress from './CircleProgress';
 import LineProgress from './LineProgress';
 import { FaCheck, FaGithub, FaLinkedin } from 'react-icons/fa';
