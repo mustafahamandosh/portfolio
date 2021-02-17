@@ -47,4 +47,16 @@ export const CardDescription = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
+
+  .icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 `;

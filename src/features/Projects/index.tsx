@@ -1,6 +1,10 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import ProfileImage from 'assets/images/profile-image.png';
+import FirstProjectImage from 'assets/images/projects/residencial/multiple-screens.png';
 import { CardDescription, ProjectsCard } from './styles';
+import ReactIcon from 'assets/icons/react.svg';
+import NodeIcon from 'assets/icons/node.svg';
+import ReactNative from 'assets/icons/react-native.svg';
 import Card from 'components/Card';
 
 const images = [
@@ -18,12 +22,16 @@ const Projects: React.FC<ProjectsProps> = ({ setModal, modal }) => {
   return (
     <ProjectsCard>
       <Card className="card">
-        <img src={ProfileImage} alt="Project" />
+        <img src={FirstProjectImage} alt="Project" />
         <CardDescription
           className="cardDescription"
           onClick={() => setModal(!modal)}
         >
-          <h5>React.js</h5>
+          <div className="icons">
+            <img src={ReactIcon} alt="" />
+            <img src={ReactNative} alt="" />
+            <img src={NodeIcon} alt="" />
+          </div>
         </CardDescription>
       </Card>
       <Card className="card">
@@ -34,9 +42,7 @@ const Projects: React.FC<ProjectsProps> = ({ setModal, modal }) => {
       </Card>
       <Card className="card">
         <img src={ProfileImage} alt="Project" />
-        <CardDescription className="cardDescription">
-          <h5>React.js</h5>
-        </CardDescription>
+        <CardDescription className="cardDescription"></CardDescription>
       </Card>
     </ProjectsCard>
   );

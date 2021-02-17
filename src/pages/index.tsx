@@ -3,16 +3,15 @@ import InfoBar from 'features/Infobar';
 import { HomeContainer, HomeWrapper, Modal } from './styles';
 import Projects from 'features/Projects/index';
 import Content from 'layout/Content';
-import ProfileImage from 'assets/images/profile-image.png';
+import FirstLayout from 'assets/images/projects/residencial/multiple-screens.png';
+import SecondLayout from 'assets/images/projects/residencial/layouts-one.png';
 import AliceCarousel from 'react-alice-carousel';
 import { AiOutlineClose } from 'react-icons/ai';
 import TimeLine from 'features/Education';
 
 const images = [
-  <img src={ProfileImage} alt="" width="50%" height={400} />,
-  <img src={ProfileImage} alt="" width="50%" height={400} />,
-  <img src={ProfileImage} alt="" width="50%" height={400} />,
-  <img src={ProfileImage} alt="" width="50%" height={400} />,
+  <img src={FirstLayout} alt="" width="80%" height={600} />,
+  <img src={SecondLayout} alt="" width="80%" height={600} />,
 ];
 
 const Home: React.FC = () => {
@@ -54,9 +53,9 @@ const Home: React.FC = () => {
             >
               <h2>Education</h2>
               <TimeLine
-                timeLineTitle="System Analysis and Development Degree"
+                timeLineTitle="System Analysis and Development"
                 timeLineDate="2018 - 2020"
-                timeLineLocationName="Grupo Educacional Opet"
+                timeLineLocationName="University Grupo Educacional Opet"
               >
                 <ol>
                   <li>
