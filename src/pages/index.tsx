@@ -13,10 +13,9 @@ import AliceCarousel from 'react-alice-carousel';
 import { AiOutlineClose } from 'react-icons/ai';
 import TimeLine from 'features/TimeLine';
 
-const images = [];
-
 const Home: React.FC = () => {
   const [modal, setModal] = useState(false);
+  const [projectImages, setProjectImages] = useState([]);
   return (
     <HomeContainer>
       <HomeWrapper>
@@ -29,14 +28,18 @@ const Home: React.FC = () => {
               />
             </div>
             <div className="gallery">
-              <AliceCarousel mouseTracking items={images} />
+              <AliceCarousel mouseTracking items={projectImages} />
             </div>
           </Modal>
         )}
         <InfoBar />
         <Content>
           <h2>Projects</h2>
-          <Projects setModal={setModal} modal={modal} />
+          <Projects
+            setModal={setModal}
+            modal={modal}
+            setProjectImages={setProjectImages}
+          />
           <EducationAndWorkContainer>
             <EducationAndWorkContent>
               <h2>Education</h2>

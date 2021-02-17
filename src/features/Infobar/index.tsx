@@ -97,15 +97,18 @@ const InfoBar: React.FC = () => (
     <Footer>
       <ul>
         <li>
-          <Link href="#">
-            <a>
+          <Link
+            href="https://www.linkedin.com/in/mustafa-hamandosh-4b178915b"
+            passHref={true}
+          >
+            <a target="_blank">
               <FaLinkedin />
             </a>
           </Link>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/feed/">
-            <a href="">
+          <Link href="https://github.com/mustafahamandosh" passHref={true}>
+            <a target="_blank">
               <FaGithub />
             </a>
           </Link>

@@ -63,6 +63,15 @@ export const Modal = styled.div`
     }
   }
 
+  .gallery {
+    img {
+      width: 50%;
+      max-height: 500px;
+      object-fit: contain;
+      transition: 0.4s ease-in-out;
+      image-rendering: high-quality;
+    }
+  }
   .alice-carousel__stage {
     margin-top: 40px;
   }
