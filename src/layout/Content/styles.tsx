@@ -22,6 +22,6 @@ export const ContentChildren = styled.div`
     display: flex;
     justify-items: flex-start;
     align-items: flex-start;
-    margin: 30px 0 10px 0;
+    margin-bottom: 10px;
   }
 `;

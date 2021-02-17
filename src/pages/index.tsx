@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import InfoBar from 'features/Infobar';
-import { HomeContainer, HomeWrapper, Modal } from './styles';
+import {
+  EducationAndWorkContainer,
+  EducationAndWorkContent,
+  HomeContainer,
+  HomeWrapper,
+  Modal,
+} from './styles';
 import Projects from 'features/Projects/index';
 import Content from 'layout/Content';
-import FirstLayout from 'assets/images/projects/residencial/multiple-screens.png';
-import SecondLayout from 'assets/images/projects/residencial/layouts-one.png';
 import AliceCarousel from 'react-alice-carousel';
 import { AiOutlineClose } from 'react-icons/ai';
-import TimeLine from 'features/Education';
+import TimeLine from 'features/TimeLine';
 
-const images = [
-  <img src={FirstLayout} alt="" width="80%" height={600} />,
-  <img src={SecondLayout} alt="" width="80%" height={600} />,
-];
+const images = [];
 
 const Home: React.FC = () => {
   const [modal, setModal] = useState(false);
@@ -34,23 +35,10 @@ const Home: React.FC = () => {
         )}
         <InfoBar />
         <Content>
-          <h2>My Projects</h2>
+          <h2>Projects</h2>
           <Projects setModal={setModal} modal={modal} />
-          <div
-            style={{
-              width: '100%',
-              display: 'flex',
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-            }}
-          >
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                width: '100%',
-              }}
-            >
+          <EducationAndWorkContainer>
+            <EducationAndWorkContent>
               <h2>Education</h2>
               <TimeLine
                 timeLineTitle="System Analysis and Development"
@@ -92,14 +80,8 @@ const Home: React.FC = () => {
                   </li>
                 </ol>
               </TimeLine>
-            </div>
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                width: '100%',
-              }}
-            >
+            </EducationAndWorkContent>
+            <EducationAndWorkContent>
               <h2>Work Experience</h2>
               <TimeLine
                 timeLineTitle="Full Stack Developer"
@@ -135,8 +117,8 @@ const Home: React.FC = () => {
                   </li>
                 </ol>
               </TimeLine>
-            </div>
-          </div>
+            </EducationAndWorkContent>
+          </EducationAndWorkContainer>
         </Content>
       </HomeWrapper>
     </HomeContainer>
