@@ -6,7 +6,7 @@ import {
   HomeContainer,
   HomeWrapper,
   Modal,
-} from './styles';
+} from '../../styles/styles';
 import Projects from 'features/Projects/index';
 import Content from 'layout/Content';
 import AliceCarousel from 'react-alice-carousel';
